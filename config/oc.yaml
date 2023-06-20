@@ -1,0 +1,38 @@
+display:
+  display: 0
+  font: !!python/object/apply:pathlib.WindowsPath
+  - C:\
+  - windows
+  - fonts
+  - harlowsi.ttf
+  height: 900
+  width: 1440
+local_server:
+  chroot: !!python/object/apply:pathlib.WindowsPath
+  - D:\
+  coding: utf-8
+  local: 0.0.0.0
+  loggingLevel: DEBUG
+  mode: unknown
+  port: 7788
+rsvp:
+  backgroundColor: gray
+  backgroundImage: RSVP/background.png
+  borderColor: cyan
+  borderWidth: 2
+  chunkLength: 100
+  chunkRepeats: -1
+  displayX: 200
+  displayY: 100
+  headSpecialImages: 10
+  height: 600
+  imagesPerSecond: 10
+  minGapBetweenTargets: 10
+  otherImageFolder: RSVP/images/other-images
+  randomSequenceFlag: true
+  resizeFlag: true
+  specialImageFolder: RSVP/images/special-images
+  tailSpecialImages: 10
+  targetImageFolder: RSVP/images/target-images
+  targetsEachChunk: 3
+  width: 800
