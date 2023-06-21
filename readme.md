@@ -40,7 +40,6 @@ OmegaConf 的一个重要特性是支持分层配置。这意味着你可以将�
 总之，OmegaConf 是一个功能强大的配置管理库，旨在简化配置的组织、合并和访问，并提供运行时的类型安全性。它广泛用于各种Python项目中，特别是在涉及复杂配置和多环境管理的情况下，它的功能显得尤其好用。
 
 > OmegaConf is a YAML based hierarchical configuration system, with support for merging configurations from multiple sources (files, CLI argument, environment variables) providing a consistent API regardless of how the configuration was created. OmegaConf also offers runtime type safety via Structured Configs.
-> 
 
 [OmegaConf — OmegaConf 2.3.0 documentation](https://omegaconf.readthedocs.io/en/2.3_branch/index.html)
 
