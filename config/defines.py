@@ -18,6 +18,7 @@ Functions:
 
 # %% ---- 2023-06-20 ------------------------
 # Requirements and constants
+import sys
 import logging
 import matplotlib as mpl
 
@@ -107,6 +108,8 @@ class RSVP:
 
 # %% ---- 2023-06-20 ------------------------
 # Play ground
+
+
 oc = OmegaConf.create(dict(
     rsvp=RSVP,
     display=Display,
@@ -117,15 +120,18 @@ oc = OmegaConf.create(dict(
 with open('oc.yaml', 'w') as f:
     f.write(OmegaConf.to_yaml(oc, sort_keys=True))
 
-print(oc)
+print('\nDefault:\n', oc)
 
 
 # %% ---- 2023-06-20 ------------------------
 # Pending
+# Merge with cli input
+cli_oc = OmegaConf.from_cli(sys.argv[1:])
+print('\nCli:\n', cli_oc)
+
+merged_oc = OmegaConf.merge(oc, cli_oc)
+print('\nMerged:\n', merged_oc)
+print()
 
 # %% ---- 2023-06-20 ------------------------
 # Pending
-
-
-# %%
-# %%
